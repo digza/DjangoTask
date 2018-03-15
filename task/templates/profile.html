@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Welcome, {{ user.username }}!</h1>
+    <h2>Here you can access your profile information</h2>
+    <h3>First name: {{ user.first_name }}</h3>
+    <h3>Last name: {{ user.last_name }}</h3>
+    <h3>Date of Birth: {{ user.profile.dob }}</h3>
+
+{% endblock %}
